@@ -1,0 +1,651 @@
+<wpml-config>
+	<custom-types>
+		<custom-type translate="1">clients</custom-type>
+		<custom-type translate="1">portfolio-item</custom-type>
+		<custom-type translate="1">team</custom-type>
+		<custom-type translate="1">testimonials</custom-type>
+	</custom-types>
+	<taxonomies>
+		<taxonomy translate="1">clients-category</taxonomy>
+		<taxonomy translate="1">portfolio-category</taxonomy>
+		<taxonomy translate="1">portfolio-tag</taxonomy>
+		<taxonomy translate="1">team-category</taxonomy>
+		<taxonomy translate="1">testimonials-category</taxonomy>
+	</taxonomies>
+	<custom-fields>
+		<custom-field action="translate" translate_link_target="1">qodef_post_format_video_url</custom-field>
+		<custom-field action="translate" translate_link_target="1">qodef_post_format_audio_url</custom-field>
+		<custom-field action="translate">qodef_post_format_link</custom-field>
+		<custom-field action="translate">qodef_post_format_link_text</custom-field>
+		<custom-field action="translate">qodef_post_format_quote_author</custom-field>
+		<custom-field action="translate">qodef_dropdown_top_position</custom-field>
+		<custom-field action="translate">qodef_logo_text</custom-field>
+		<custom-field action="translate">qodef_mobile_logo_text</custom-field>
+		<custom-field action="translate">qodef_page_title_subtitle</custom-field>
+		<custom-field action="translate">qodef_client_link</custom-field>
+		<custom-field action="translate">qodef_portfolio_item_location</custom-field>
+		<custom-field action="translate">qodef_portfolio_item_year</custom-field>
+		<custom-field action="translate">qodef_portfolio_single_external_link</custom-field>
+		<custom-field action="translate">qodef_team_member_role</custom-field>
+		<custom-field action="translate">qodef_testimonials_title</custom-field>
+		<custom-field action="translate">qodef_testimonials_author</custom-field>
+		<custom-field action="translate">qodef_testimonials_author_job</custom-field>
+		<custom-field action="translate">qodef_post_format_quote_text</custom-field>
+		<custom-field action="translate">qodef_testimonials_text</custom-field>
+		<custom-field action="copy">qodef_blog_list_image</custom-field>
+		<custom-field action="copy">qodef_post_format_gallery_images</custom-field>
+		<custom-field action="copy">qodef_page_background_image</custom-field>
+		<custom-field action="copy">qodef_boxed_background_pattern</custom-field>
+		<custom-field action="copy">qodef_passepartout_image</custom-field>
+		<custom-field action="copy">qodef_top_footer_area_background_image</custom-field>
+		<custom-field action="copy">qodef_logo_main</custom-field>
+		<custom-field action="copy">qodef_logo_dark</custom-field>
+		<custom-field action="copy">qodef_logo_light</custom-field>
+		<custom-field action="copy">qodef_logo_vertical_sliding</custom-field>
+		<custom-field action="copy">qodef_logo_sticky</custom-field>
+		<custom-field action="copy">qodef_mobile_logo_main</custom-field>
+		<custom-field action="copy">qodef_page_title_background_image</custom-field>
+		<custom-field action="copy">qodef_product_list_image</custom-field>
+		<custom-field action="copy">qodef_logo_image</custom-field>
+		<custom-field action="copy">qodef_logo_hover_image</custom-field>
+		<custom-field action="copy">qodef_portfolio_list_image</custom-field>
+		<custom-field action="copy">qodef_portfolio_media</custom-field>
+		<custom-field action="copy">qodef_portfolio_info_items</custom-field>
+		<custom-field action="copy">qodef_portfolio_award_items</custom-field>
+		<custom-field action="copy">qodef_team_member_social_networks</custom-field>
+	</custom-fields>
+	<admin-texts>
+		<key name="archicon_core_options">
+			<key name="qodef_page_spinner_text" />
+			<key name="qodef_logo_text" />
+			<key name="qodef_mobile_logo_text" />
+			<key name="qodef_dropdown_top_position" />
+			<key name="qodef_search_page_excerpt_number_of_characters" />
+			<key name="qodef_blog_list_excerpt_number_of_characters" />
+			<key name="qodef_twitter_via" />
+			<key name="qodef_404_page_title" />
+			<key name="qodef_404_page_text" />
+			<key name="qodef_404_page_button_text" />
+			<key name="qodef_page_background_image" />
+			<key name="qodef_boxed_background_pattern" />
+			<key name="qodef_passepartout_image" />
+			<key name="qodef_logo_main" />
+			<key name="qodef_logo_dark" />
+			<key name="qodef_logo_light" />
+			<key name="qodef_logo_vertical_sliding" />
+			<key name="qodef_logo_sticky" />
+			<key name="qodef_mobile_logo_main" />
+			<key name="qodef_fullscreen_menu_background_image" />
+			<key name="qodef_page_title_background_image" />
+			<key name="qodef_top_footer_area_background_image" />
+			<key name="qodef_404_page_background_image" />
+		</key>
+		<key name="archicon_core_blog_list">
+			<key name="*">
+				<key name="widget_title" />
+				<key name="post_ids" />
+				<key name="tax_slug" />
+				<key name="tax__in" />
+				<key name="author_slug" />
+			</key>
+		</key>
+		<key name="archicon_core_simple_blog_list">
+			<key name="*">
+				<key name="widget_title" />
+				<key name="post_ids" />
+				<key name="tax_slug" />
+				<key name="tax__in" />
+				<key name="author_slug" />
+			</key>
+		</key>
+		<key name="archicon_core_contact_form_7">
+			<key name="*">
+				<key name="widget_title" />
+			</key>
+		</key>
+		<key name="archicon_core_button">
+			<key name="*">
+				<key name="text" />
+				<key name="link" />
+				<key name="input_name" />
+			</key>
+		</key>
+		<key name="archicon_core_custom_font">
+			<key name="*">
+				<key name="title" />
+			</key>
+		</key>
+		<key name="archicon_core_icon">
+			<key name="*">
+				<key name="link" />
+			</key>
+		</key>
+		<key name="archicon_core_icon_list_item">
+			<key name="*">
+				<key name="link" />
+				<key name="title" />
+			</key>
+		</key>
+		<key name="archicon_core_single_image">
+			<key name="*">
+				<key name="image" />
+				<key name="link" />
+			</key>
+		</key>
+		<key name="archicon_core_social_share">
+			<key name="*">
+				<key name="title" />
+			</key>
+		</key>
+		<key name="archicon_core_author_info">
+			<key name="*">
+				<key name="author_username" />
+			</key>
+		</key>
+		<key name="archicon_core_contact_info">
+			<key name="*">
+				<key name="widget_title" />
+				<key name="link" />
+			</key>
+		</key>
+		<key name="archicon_core_social_icons_group">
+			<key name="*">
+				<key name="widget_title" />
+				<key name="text_icon_1" />
+				<key name="link_1" />
+				<key name="text_icon_2" />
+				<key name="link_2" />
+				<key name="text_icon_3" />
+				<key name="link_3" />
+				<key name="text_icon_4" />
+				<key name="link_4" />
+				<key name="text_icon_5" />
+				<key name="link_5" />
+			</key>
+		</key>
+		<key name="archicon_core_title_widget">
+			<key name="*">
+				<key name="title" />
+			</key>
+		</key>
+	</admin-texts>
+	<shortcodes>
+		<shortcode>
+			<tag>archicon_core_icon</tag>
+			<attributes>
+				<attribute>link</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>archicon_core_button</tag>
+			<attributes>
+				<attribute>text</attribute>
+				<attribute>link</attribute>
+				<attribute>input_name</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>archicon_core_assorted_portfolio_gallery</tag>
+			<attributes>
+				<attribute type="area" encoding="urlencoded_json">children</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>archicon_core_horizontal_portfolio_showcase</tag>
+			<attributes>
+				<attribute>intro_text</attribute>
+				<attribute>highlight_words_positions</attribute>
+				<attribute>outro_title</attribute>
+				<attribute>outro_text</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>archicon_core_interactive_portfolio_showcase</tag>
+			<attributes>
+				<attribute>project_column_label</attribute>
+				<attribute>area_column_label</attribute>
+				<attribute>year_column_label</attribute>
+				<attribute>intro_text</attribute>
+				<attribute>highlight_words_positions</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>archicon_core_portfolio_grid_slider</tag>
+			<attributes>
+				<attribute>slider_title</attribute>
+				<attribute>button_text</attribute>
+				<attribute>button_link</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>archicon_core_portfolio_list_accordion</tag>
+			<attributes>
+				<attribute>project_column_label</attribute>
+				<attribute>area_column_label</attribute>
+				<attribute>year_column_label</attribute>
+				<attribute>button_text</attribute>
+				<attribute>button_link</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>archicon_core_portfolio_showcase</tag>
+			<attributes>
+				<attribute type="area" encoding="urlencoded_json">children</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>archicon_core_testimonials_list</tag>
+			<attributes>
+				<attribute>static_title</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>archicon_core_accordion_child</tag>
+			<attributes>
+				<attribute>title</attribute>
+				<attribute>layout</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>archicon_core_banner</tag>
+			<attributes>
+				<attribute>link_url</attribute>
+				<attribute>title</attribute>
+				<attribute>subtitle</attribute>
+				<attribute>text_field</attribute>
+				<attribute>text</attribute>
+				<attribute>input_name</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>archicon_core_counter</tag>
+			<attributes>
+				<attribute>start_digit</attribute>
+				<attribute>end_digit</attribute>
+				<attribute>step_digit</attribute>
+				<attribute>step_delay</attribute>
+				<attribute>digit_label</attribute>
+				<attribute>title</attribute>
+				<attribute>text</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>archicon_core_custom_font</tag>
+			<attributes>
+				<attribute>title</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>archicon_core_dropcaps</tag>
+			<attributes>
+				<attribute>letter</attribute>
+				<attribute>text</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>archicon_core_google_map</tag>
+			<attributes>
+				<attribute>address1</attribute>
+				<attribute>address2</attribute>
+				<attribute>address3</attribute>
+				<attribute>address4</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>archicon_core_highlight</tag>
+			<attributes>
+				<attribute>text</attribute>
+				<attribute>link</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>archicon_core_icon_list_item</tag>
+			<attributes>
+				<attribute>link</attribute>
+				<attribute>title</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>archicon_core_icon_with_text</tag>
+			<attributes>
+				<attribute>link</attribute>
+				<attribute>svg_code</attribute>
+				<attribute>title</attribute>
+				<attribute>text</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>archicon_core_image_marquee</tag>
+			<attributes>
+				<attribute>duration</attribute>
+				<attribute>link</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>archicon_core_image_with_text</tag>
+			<attributes>
+				<attribute>link</attribute>
+				<attribute>title</attribute>
+				<attribute>text</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>archicon_core_info_section</tag>
+			<attributes>
+				<attribute>title</attribute>
+				<attribute>info_text</attribute>
+				<attribute>text</attribute>
+				<attribute>link</attribute>
+				<attribute>input_name</attribute>
+				<attribute>background_text_text</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>archicon_core_interactive_link_showcase</tag>
+			<attributes>
+				<attribute type="area" encoding="urlencoded_json">children</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>archicon_core_pricing_table</tag>
+			<attributes>
+				<attribute>title</attribute>
+				<attribute>price</attribute>
+				<attribute>currency</attribute>
+				<attribute>content</attribute>
+				<attribute>text</attribute>
+				<attribute>link</attribute>
+				<attribute>input_name</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>archicon_core_section_title</tag>
+			<attributes>
+				<attribute>title</attribute>
+				<attribute>tagline</attribute>
+				<attribute>text</attribute>
+				<attribute>delay</attribute>
+				<attribute>link_positions</attribute>
+				<attribute>link_icon</attribute>
+				<attribute>title_word_spacing</attribute>
+				<attribute>title_word_spacing_1680</attribute>
+				<attribute>title_word_spacing_1440</attribute>
+				<attribute>title_word_spacing_1366</attribute>
+				<attribute>title_word_spacing_1024</attribute>
+				<attribute>title_word_spacing_768</attribute>
+				<attribute>title_word_spacing_680</attribute>
+				<attribute>button_text</attribute>
+				<attribute>button_link</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>archicon_core_single_image</tag>
+			<attributes>
+				<attribute>link</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>archicon_core_single_svg</tag>
+			<attributes>
+				<attribute>svg_code</attribute>
+				<attribute>link</attribute>
+				<attribute>parallax_amount</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>archicon_core_text_marquee</tag>
+			<attributes>
+				<attribute>text_1</attribute>
+				<attribute>text_2</attribute>
+				<attribute>text_3</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>archicon_core_timeline</tag>
+			<attributes>
+				<attribute>space_between_items</attribute>
+				<attribute type="area" encoding="urlencoded_json">children</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>archicon_core_video_button</tag>
+			<attributes>
+				<attribute>video_link</attribute>
+			</attributes>
+		</shortcode>
+		<shortcode>
+			<tag>archicon_core_social_share</tag>
+			<attributes>
+				<attribute>title</attribute>
+			</attributes>
+		</shortcode>
+	</shortcodes>
+	<elementor-widgets>
+		<widget name="archicon_core_icon">
+			<fields>
+				<field>link</field>
+			</fields>
+		</widget>
+		<widget name="archicon_core_button">
+			<fields>
+				<field>text</field>
+				<field>link</field>
+				<field>input_name</field>
+			</fields>
+		</widget>
+		<widget name="archicon_core_assorted_portfolio_gallery">
+			<fields-in-item items_of="children">
+				<field>list_position</field>
+				<field>item_text</field>
+				<field>item_link</field>
+			</fields-in-item>
+		</widget>
+		<widget name="archicon_core_horizontal_portfolio_showcase">
+			<fields>
+				<field>intro_text</field>
+				<field>highlight_words_positions</field>
+				<field>outro_title</field>
+				<field>outro_text</field>
+			</fields>
+		</widget>
+		<widget name="archicon_core_interactive_portfolio_showcase">
+			<fields>
+				<field>project_column_label</field>
+				<field>area_column_label</field>
+				<field>year_column_label</field>
+				<field>intro_text</field>
+				<field>highlight_words_positions</field>
+			</fields>
+		</widget>
+		<widget name="archicon_core_portfolio_grid_slider">
+			<fields>
+				<field>slider_title</field>
+				<field>button_text</field>
+				<field>button_link</field>
+			</fields>
+		</widget>
+		<widget name="archicon_core_portfolio_list_accordion">
+			<fields>
+				<field>project_column_label</field>
+				<field>area_column_label</field>
+				<field>year_column_label</field>
+				<field>button_text</field>
+				<field>button_link</field>
+			</fields>
+		</widget>
+		<widget name="archicon_core_portfolio_showcase">
+			<fields-in-item items_of="children">
+				<field>text</field>
+			</fields-in-item>
+		</widget>
+		<widget name="archicon_core_testimonials_list">
+			<fields>
+				<field>static_title</field>
+			</fields>
+		</widget>
+		<widget name="archicon_core_accordion_child">
+			<fields>
+				<field>title</field>
+				<field>layout</field>
+			</fields>
+		</widget>
+		<widget name="archicon_core_banner">
+			<fields>
+				<field>link_url</field>
+				<field>title</field>
+				<field>subtitle</field>
+				<field>text_field</field>
+				<field>text</field>
+				<field>input_name</field>
+			</fields>
+		</widget>
+		<widget name="archicon_core_counter">
+			<fields>
+				<field>start_digit</field>
+				<field>end_digit</field>
+				<field>step_digit</field>
+				<field>step_delay</field>
+				<field>digit_label</field>
+				<field>title</field>
+				<field>text</field>
+			</fields>
+		</widget>
+		<widget name="archicon_core_custom_font">
+			<fields>
+				<field>title</field>
+			</fields>
+		</widget>
+		<widget name="archicon_core_dropcaps">
+			<fields>
+				<field>letter</field>
+				<field>text</field>
+			</fields>
+		</widget>
+		<widget name="archicon_core_google_map">
+			<fields>
+				<field>address1</field>
+				<field>address2</field>
+				<field>address3</field>
+				<field>address4</field>
+			</fields>
+		</widget>
+		<widget name="archicon_core_highlight">
+			<fields>
+				<field>text</field>
+				<field>link</field>
+			</fields>
+		</widget>
+		<widget name="archicon_core_icon_list_item">
+			<fields>
+				<field>link</field>
+				<field>title</field>
+			</fields>
+		</widget>
+		<widget name="archicon_core_icon_with_text">
+			<fields>
+				<field>link</field>
+				<field>svg_code</field>
+				<field>title</field>
+				<field>text</field>
+			</fields>
+		</widget>
+		<widget name="archicon_core_image_marquee">
+			<fields>
+				<field>duration</field>
+				<field>link</field>
+			</fields>
+		</widget>
+		<widget name="archicon_core_image_with_text">
+			<fields>
+				<field>link</field>
+				<field>title</field>
+				<field>text</field>
+			</fields>
+		</widget>
+		<widget name="archicon_core_info_section">
+			<fields>
+				<field>title</field>
+				<field>info_text</field>
+				<field>text</field>
+				<field>link</field>
+				<field>input_name</field>
+				<field>background_text_text</field>
+			</fields>
+		</widget>
+		<widget name="archicon_core_interactive_link_showcase">
+			<fields-in-item items_of="children">
+				<field>item_link</field>
+				<field>item_title</field>
+			</fields-in-item>
+		</widget>
+		<widget name="archicon_core_pricing_table">
+			<fields>
+				<field>title</field>
+				<field>price</field>
+				<field>currency</field>
+				<field>content</field>
+				<field>text</field>
+				<field>link</field>
+				<field>input_name</field>
+			</fields>
+		</widget>
+		<widget name="archicon_core_section_title">
+			<fields>
+				<field>title</field>
+				<field>tagline</field>
+				<field>text</field>
+				<field>delay</field>
+				<field>link_positions</field>
+				<field>link_icon</field>
+				<field>title_word_spacing</field>
+				<field>title_word_spacing_1680</field>
+				<field>title_word_spacing_1440</field>
+				<field>title_word_spacing_1366</field>
+				<field>title_word_spacing_1024</field>
+				<field>title_word_spacing_768</field>
+				<field>title_word_spacing_680</field>
+				<field>button_text</field>
+				<field>button_link</field>
+			</fields>
+		</widget>
+		<widget name="archicon_core_single_image">
+			<fields>
+				<field>link</field>
+			</fields>
+		</widget>
+		<widget name="archicon_core_single_svg">
+			<fields>
+				<field>svg_code</field>
+				<field>link</field>
+				<field>parallax_amount</field>
+			</fields>
+		</widget>
+		<widget name="archicon_core_text_marquee">
+			<fields>
+				<field>text_1</field>
+				<field>text_2</field>
+				<field>text_3</field>
+			</fields>
+		</widget>
+		<widget name="archicon_core_timeline">
+			<fields>
+				<field>space_between_items</field>
+			</fields>
+			<fields-in-item items_of="children">
+				<field>title</field>
+				<field>text</field>
+				<field>link</field>
+			</fields-in-item>
+		</widget>
+		<widget name="archicon_core_video_button">
+			<fields>
+				<field>video_link</field>
+			</fields>
+		</widget>
+		<widget name="archicon_core_social_share">
+			<fields>
+				<field>title</field>
+			</fields>
+		</widget>
+	</elementor-widgets>
+</wpml-config>

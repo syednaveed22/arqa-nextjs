@@ -1,0 +1,75 @@
+1.6.1
+- Updated Qode Framework to 1.2.6
+- Updated Revolution Slider to 6.7.35
+- Updated Archicon Core to 1.4
+- Updated WPML config file
+- Improved Google Map API compatibility
+- Fixed translation loading
+- Minor fixes
+
+1.6
+- Added readme.txt
+- Added WPML config file
+- Updated Qode Framework to 1.2.4
+- Updated Revolution Slider to 6.7.29
+- Updated Archicon Core to 1.3
+- Updated FontAwesome icons pack to 6.6
+- Updated Search template helper functions
+- Updated Contact Form 7 helper functions
+- Improved theme's security
+- Improved PHP 8.3 compatibility
+- Improved Parallax Background functionality
+- Improved pagination helper functions
+- Improved back to top scrolling
+- Minor fixes
+
+1.5
+- Updated Qode Framework plugin to 1.2.3
+- Updated Archicon Core plugin to 1.2.2
+- Updated Revolution Slider to 6.7.18
+- Updated Swiper library to 8.4.5
+- Improved PHP 8.2 compatibility
+- Improved Google Maps API compatibility
+- Improved Elementor compatibility
+- Improved WooCommerce compatibility
+- Fixed custom font upload not working
+
+1.4
+- Added QODE Quick View for WooCommerce plugin as required
+- Added WordPress 6.5.3 compatibility
+- Added WooCommerce 8.8.3 compatibility
+- Updated Revolution Slider plugin to 6.7.10
+- Updated Archicon Core plugin to 1.2.1
+- Improved blog single pagination responsiveness
+
+1.3
+- Added QODE Wishlist for WooCommerce plugin as required
+- Added WordPress 6.4.3 compatibility
+- Added WooCommerce 8.7.0 compatibility
+- Added 'archicon_core_action_product_list_item_additional_image_content' action hook to Product List shortcode
+- Updated Revolution Slider plugin to 6.6.20
+- Updated Archicon Core plugin to 1.2
+- Improved Google Maps API with callback function
+
+1.2
+- Added WordPress 6.2.2 compatibility
+- Added WooCommerce 7.8.0 compatibility
+- Updated Revolution Slider plugin to 6.6.14
+
+1.1.1
+- Updated Qode Framework plugin to 1.2.2
+- Updated Revolution Slider plugin to 6.6.12
+
+1.1
+- Added WordPress 6.1.1 compatibility
+- Added WooCommerce 7.3.0 compatibility
+- Added archicon_validate_pagination_data helper function
+- Updated Qode Framework Plugin to 1.2
+- Updated Archicon Core plugin to 1.1
+- Updated Revolution Slider plugin to 6.6.10
+- Updated pot files
+- Improved themes security
+- Improved Google Maps API with a callback function
+- Disabled Google Fonts loading if the global option (Enable Google Fonts) is set to No
+- Fixed import of demo custom widget areas
+- Fixed minor bugs

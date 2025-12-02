@@ -1,0 +1,302 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Color System - Archicon Inspired */
+  --primary-color: #F1F1EE;
+  --primary-color-rgb: 241, 241, 238;
+  --secondary-color: #555555;
+  --secondary-color-rgb: 85, 85, 85;
+  --dark-color: #121212;
+  --dark-color-rgb: 18, 18, 18;
+  --accent-color: #f94e41;
+  --accent-color-hover: #d43e33;
+  --body-bg-color: #ffffff;
+  --link-color: #121212;
+  --link-color-hover: #f94e41;
+  --link-color-active: #f94e41;
+  --gradient-color-from: #fff;
+  --gradient-color-to: #F1F1EE;
+
+  /* Spacing - Archicon Scale */
+  --section-padding-y: 130px;
+  --section-padding-y-mobile: 80px;
+  --container-max-width: 1400px;
+  --content-max-width: 1100px;
+}
+
+@layer base {
+  html {
+    @apply box-border scroll-smooth;
+  }
+
+  body {
+    @apply m-0 p-0 overflow-x-hidden font-body bg-white text-body-text;
+    font-size: 15px;
+    line-height: 1.667;
+    letter-spacing: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Typography System - Archicon Inspired */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading text-dark m-0 font-normal;
+    letter-spacing: -0.025em;
+  }
+
+  h1, .h1 {
+    font-size: clamp(2.5rem, 5vw, 5rem);
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+  }
+
+  h2, .h2 {
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    line-height: 1.15;
+    margin-bottom: 1.25rem;
+  }
+
+  h3, .h3 {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  h4, .h4 {
+    font-size: clamp(1.25rem, 2.5vw, 2rem);
+    line-height: 1.3;
+    margin-bottom: 0.875rem;
+  }
+
+  h5, .h5 {
+    font-size: clamp(1.125rem, 2vw, 1.5rem);
+    line-height: 1.4;
+    margin-bottom: 0.75rem;
+  }
+
+  h6, .h6 {
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    line-height: 1.5;
+    letter-spacing: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Links - Archicon Style */
+  a {
+    @apply outline-none no-underline;
+    color: var(--link-color);
+    transition: color 0.3s cubic-bezier(0.33, 0.02, 0, 0.93);
+  }
+
+  a:hover {
+    color: var(--link-color-hover);
+  }
+
+  a:active {
+    color: var(--link-color-active);
+  }
+
+  p {
+    @apply mb-6;
+    font-size: 15px;
+    line-height: 1.667;
+  }
+
+  /* Selection */
+  ::selection {
+    background-color: var(--accent-color);
+    color: white;
+  }
+
+  ::-moz-selection {
+    background-color: var(--accent-color);
+    color: white;
+  }
+}
+
+@layer components {
+  /* Container System */
+  .container-custom {
+    @apply mx-auto px-6 lg:px-12;
+    max-width: var(--container-max-width);
+  }
+
+  .content-container {
+    @apply mx-auto px-6;
+    max-width: var(--content-max-width);
+  }
+
+  /* Section Spacing */
+  .section-padding {
+    padding-top: var(--section-padding-y);
+    padding-bottom: var(--section-padding-y);
+  }
+
+  @media (max-width: 768px) {
+    .section-padding {
+      padding-top: var(--section-padding-y-mobile);
+      padding-bottom: var(--section-padding-y-mobile);
+    }
+  }
+
+  /* Button System - Archicon Inspired */
+  .btn {
+    @apply inline-flex items-center justify-center font-semibold uppercase tracking-wide relative overflow-hidden;
+    padding: 19px 44px;
+    font-size: 14px;
+    border: 0 solid transparent;
+    transition: all 0.6s cubic-bezier(0.33, 0.02, 0, 0.93);
+  }
+
+  .btn-primary {
+    @apply bg-accent text-white;
+  }
+
+  .btn-primary:hover {
+    @apply bg-dark;
+  }
+
+  .btn-secondary {
+    @apply bg-dark text-white;
+  }
+
+  .btn-secondary:hover {
+    @apply bg-accent;
+  }
+
+  .btn-outline {
+    @apply border border-dark text-dark bg-transparent;
+  }
+
+  .btn-outline:hover {
+    @apply bg-dark text-white;
+  }
+
+  /* Animated Link Underline - Archicon Style */
+  .link-underline {
+    @apply relative inline-block;
+  }
+
+  .link-underline::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-px bg-current;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.8s cubic-bezier(0.33, 0.02, 0, 0.93);
+  }
+
+  .link-underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+
+  /* Card Styles */
+  .card {
+    @apply relative overflow-hidden bg-white;
+    transition: transform 0.6s cubic-bezier(0.33, 0.02, 0, 0.93);
+  }
+
+  .card:hover {
+    transform: translateY(-8px);
+  }
+
+  /* Image Overlay Effect - Archicon */
+  .image-overlay {
+    @apply relative overflow-hidden;
+  }
+
+  .image-overlay::before {
+    content: '';
+    @apply absolute inset-0 bg-dark/40 opacity-0;
+    transition: opacity 0.6s cubic-bezier(0.33, 0.02, 0, 0.93);
+  }
+
+  .image-overlay:hover::before {
+    @apply opacity-100;
+  }
+
+  .image-overlay img {
+    transition: transform 0.8s cubic-bezier(0.33, 0.02, 0, 0.93);
+  }
+
+  .image-overlay:hover img {
+    transform: scale(1.08);
+  }
+
+  /* Text Gradient */
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, var(--dark-color) 0%, var(--accent-color) 100%);
+  }
+}
+
+@layer utilities {
+  /* Text Utilities */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Will Change for Performance */
+  .will-change-transform {
+    will-change: transform;
+  }
+
+  /* Custom Animations */
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s cubic-bezier(0.33, 0.02, 0, 0.93),
+                transform 0.8s cubic-bezier(0.33, 0.02, 0, 0.93);
+  }
+
+  .animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Backdrop Filter */
+  .backdrop-blur-custom {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+}
+
+/* Custom Scrollbar - Sleek Design */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--primary-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--dark-color);
+}
+
+/* Focus Visible for Accessibility */
+:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+/* Smooth Transitions for Reduced Motion Users */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
