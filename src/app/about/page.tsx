@@ -33,9 +33,9 @@ export default function AboutPage() {
 
   const team = [
     {
-      name: "Elliot Carter",
-      role: "Founder & Lead Architect",
-      bio: "A specialist in urban planning and mixed-use developments. Elliot focuses on delivering forward-thinking solutions that enhance cityscapes and communities.",
+      name: "Syed Haseeb",
+      role: "Founder and Lead Engineer",
+      bio: "A specialist in construction management and site engineering. Syed focuses on overseeing project execution, ensuring structural integrity, and delivering high-quality engineering solutions that meet the highest standards of safety and performance.",
       image: "/images/team/team-1.jpg",
       linkedin: "#",
     },
