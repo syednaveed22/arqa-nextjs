@@ -30,19 +30,19 @@ export default function HeroBusiness() {
       {/* Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-dark/50" />
 
-      <div className="container mx-auto px-6 lg:px-12 max-w-[1400px] relative z-10 py-32 md:py-40">
+      <div className="container mx-auto px-6 lg:px-12 max-w-[1400px] relative z-10 py-20 sm:py-24 md:py-32 lg:py-40">
         <div className="max-w-5xl mx-auto">
           {/* Main Headline */}
           <motion.h1
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.15, ease: [0.33, 0.02, 0, 0.93] }}
-            className="text-center mb-8"
+            className="text-center mb-6 md:mb-8"
           >
-            <span className="block text-white font-heading font-normal leading-[1.1] tracking-tighter">
+            <span className="block text-white font-heading font-normal leading-[1.1] tracking-tighter text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
               Luxury Villa Design &
             </span>
-            <span className="block text-white font-heading font-normal leading-[1.1] tracking-tighter">
+            <span className="block text-white font-heading font-normal leading-[1.1] tracking-tighter text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
               Construction{" "}
               <span className="text-accent relative inline-block">
                 Specialists
@@ -54,7 +54,7 @@ export default function HeroBusiness() {
                 />
               </span>
             </span>
-            <span className="block text-white/70 font-heading font-normal leading-[1.1] tracking-tighter">
+            <span className="block text-white/70 font-heading font-normal leading-[1.1] tracking-tighter text-2xl sm:text-3xl md:text-4xl">
               in Dubai
             </span>
           </motion.h1>
@@ -64,7 +64,7 @@ export default function HeroBusiness() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3, ease: [0.33, 0.02, 0, 0.93] }}
-            className="text-center text-lg md:text-xl text-white/70 mb-10 leading-relaxed max-w-3xl mx-auto"
+            className="text-center text-base sm:text-lg md:text-xl text-white/70 mb-8 md:mb-10 leading-relaxed max-w-3xl mx-auto px-4"
           >
             Full-service architecture and construction for investors, developers, and homeowners across the UAE
           </motion.p>
@@ -74,7 +74,7 @@ export default function HeroBusiness() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4, ease: [0.33, 0.02, 0, 0.93] }}
-            className="flex flex-wrap justify-center gap-6 md:gap-8 mb-12 text-sm md:text-base"
+            className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 mb-10 md:mb-12 text-xs sm:text-sm md:text-base px-4"
           >
             {[
               "Dubai Municipality Approved",
@@ -135,7 +135,7 @@ export default function HeroBusiness() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8, ease: [0.33, 0.02, 0, 0.93] }}
-            className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 mt-20 pt-12 border-t border-white/10"
+            className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 lg:gap-12 mt-12 md:mt-16 lg:mt-20 pt-8 md:pt-12 border-t border-white/10"
           >
             {[
               { value: "15+", label: "Years Experience" },
@@ -150,10 +150,10 @@ export default function HeroBusiness() {
                 transition={{ duration: 0.6, delay: 1 + index * 0.1, ease: [0.33, 0.02, 0, 0.93] }}
                 className="text-center"
               >
-                <div className="text-3xl md:text-4xl font-heading font-bold text-white mb-2 tracking-tight">
+                <div className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-white mb-1 md:mb-2 tracking-tight">
                   {stat.value}
                 </div>
-                <div className="text-sm text-white/60 uppercase tracking-wider">
+                <div className="text-xs sm:text-sm text-white/60 uppercase tracking-wider">
                   {stat.label}
                 </div>
               </motion.div>

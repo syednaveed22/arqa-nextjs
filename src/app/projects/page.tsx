@@ -127,13 +127,13 @@ export default function ProjectsPage() {
   return (
     <main className="min-h-screen bg-[#FBF8F2]">
       {/* Hero Section */}
-      <section className="pt-32 pb-16 lg:pt-40 lg:pb-20">
+      <section className="pt-24 sm:pt-28 md:pt-32 pb-12 sm:pb-16 lg:pt-40 lg:pb-20">
         <div className="container-custom">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-[11px] uppercase tracking-[0.25em] text-gray-400 mb-6 font-medium"
+            className="text-[11px] uppercase tracking-[0.25em] text-gray-400 mb-4 md:mb-6 font-medium"
           >
             THE WORKS
           </motion.p>
@@ -141,7 +141,7 @@ export default function ProjectsPage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-heading font-normal tracking-tight leading-[1.1] text-gray-900 mb-8"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-heading font-normal tracking-tight leading-[1.1] text-gray-900 mb-6 md:mb-8"
           >
             Our Projects
           </motion.h1>
@@ -151,7 +151,7 @@ export default function ProjectsPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="flex flex-wrap gap-3 justify-end"
+            className="flex flex-wrap gap-2 md:gap-3 justify-start sm:justify-end"
           >
             {categories.map((category) => (
               <button
@@ -171,9 +171,9 @@ export default function ProjectsPage() {
       </section>
 
       {/* Projects Grid */}
-      <section className="pb-24 lg:pb-32">
+      <section className="pb-16 sm:pb-20 md:pb-24 lg:pb-32">
         <div className="container-custom">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10">
             {filteredProjects.map((project, index) => (
               <motion.div
                 key={project.id}
@@ -196,13 +196,13 @@ export default function ProjectsPage() {
 
                     {/* Project Info */}
                     <div>
-                      <h3 className="text-xl lg:text-2xl font-heading font-normal text-gray-900 mb-3 group-hover:text-gray-600 transition-colors duration-300">
+                      <h3 className="text-lg sm:text-xl lg:text-2xl font-heading font-normal text-gray-900 mb-2 md:mb-3 group-hover:text-gray-600 transition-colors duration-300">
                         {project.title}
                       </h3>
-                      <p className="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-2">
+                      <p className="text-xs sm:text-sm text-gray-600 mb-3 md:mb-4 leading-relaxed line-clamp-2">
                         {project.description}
                       </p>
-                      <div className="flex items-center gap-4 text-xs uppercase tracking-wider text-gray-400">
+                      <div className="flex items-center gap-3 md:gap-4 text-xs uppercase tracking-wider text-gray-400">
                         <span className="font-medium">{project.category}</span>
                         <span>|</span>
                         <span>{project.year}</span>

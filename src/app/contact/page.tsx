@@ -29,7 +29,7 @@ export default function ContactPage() {
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="pt-32 pb-16 lg:pt-40 lg:pb-20 bg-[#FBF8F2]">
+      <section className="pt-24 sm:pt-28 md:pt-32 pb-12 sm:pb-16 lg:pt-40 lg:pb-20 bg-[#FBF8F2]">
         <div className="container mx-auto px-6 lg:px-12 max-w-[1400px]">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -37,13 +37,13 @@ export default function ContactPage() {
             transition={{ duration: 0.8 }}
             className="max-w-4xl"
           >
-            <p className="text-[11px] uppercase tracking-[0.25em] text-gray-400 mb-6 font-medium">
+            <p className="text-[11px] uppercase tracking-[0.25em] text-gray-400 mb-4 md:mb-6 font-medium">
               GET IN TOUCH
             </p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-heading font-normal tracking-tight leading-[1.1] text-gray-900 mb-8">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-heading font-normal tracking-tight leading-[1.1] text-gray-900 mb-6 md:mb-8">
               Contact us
             </h1>
-            <p className="text-[15px] lg:text-base leading-relaxed text-gray-600 max-w-2xl">
+            <p className="text-sm sm:text-[15px] lg:text-base leading-relaxed text-gray-600 max-w-2xl">
               We'd love to hear from you! Whether you have a new project in mind, need expert consultation, or just want to learn more about our work, our team is ready to assist. Reach out to us, and let's create something remarkable.
             </p>
           </motion.div>
@@ -51,9 +51,9 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Section - Two Columns */}
-      <section className="py-16 lg:py-24 bg-white">
+      <section className="py-12 sm:py-16 lg:py-24 bg-white">
         <div className="container mx-auto px-6 lg:px-12 max-w-[1400px]">
-          <div className="grid lg:grid-cols-2 gap-16 lg:gap-20 items-start lg:items-center">
+          <div className="grid lg:grid-cols-2 gap-12 md:gap-16 lg:gap-20 items-start lg:items-center">
             {/* Left Column - Contact Information */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
@@ -70,13 +70,13 @@ export default function ContactPage() {
                 <div className="space-y-2">
                   <a
                     href="mailto:hello@arqa.com"
-                    className="block text-lg lg:text-xl font-heading text-gray-900 hover:text-gray-600 transition-colors duration-300"
+                    className="block text-base sm:text-lg lg:text-xl font-heading text-gray-900 hover:text-gray-600 transition-colors duration-300 break-all"
                   >
                     HELLO@ARQA.COM
                   </a>
                   <a
                     href="mailto:projects@arqa.com"
-                    className="block text-lg lg:text-xl font-heading text-gray-900 hover:text-gray-600 transition-colors duration-300"
+                    className="block text-base sm:text-lg lg:text-xl font-heading text-gray-900 hover:text-gray-600 transition-colors duration-300 break-all"
                   >
                     PROJECTS@ARQA.COM
                   </a>
@@ -91,13 +91,13 @@ export default function ContactPage() {
                 <div className="space-y-2">
                   <a
                     href="tel:+971501234567"
-                    className="block text-lg lg:text-xl font-heading text-gray-900 hover:text-gray-600 transition-colors duration-300"
+                    className="block text-base sm:text-lg lg:text-xl font-heading text-gray-900 hover:text-gray-600 transition-colors duration-300"
                   >
                     +971 50 123 4567
                   </a>
                   <a
                     href="tel:+97142234567"
-                    className="block text-lg lg:text-xl font-heading text-gray-900 hover:text-gray-600 transition-colors duration-300"
+                    className="block text-base sm:text-lg lg:text-xl font-heading text-gray-900 hover:text-gray-600 transition-colors duration-300"
                   >
                     +971 4 223 4567
                   </a>
@@ -109,7 +109,7 @@ export default function ContactPage() {
                 <p className="text-[11px] uppercase tracking-[0.2em] text-gray-400 mb-4 font-medium">
                   LOCATION
                 </p>
-                <p className="text-lg lg:text-xl font-heading text-gray-900 leading-relaxed">
+                <p className="text-base sm:text-lg lg:text-xl font-heading text-gray-900 leading-relaxed">
                   Arqa Design & Build Studio<br />
                   Business Bay, Dubai<br />
                   United Arab Emirates
@@ -122,8 +122,8 @@ export default function ContactPage() {
                   HOURS
                 </p>
                 <div className="space-y-1">
-                  <p className="text-lg lg:text-xl font-heading text-gray-900">Monday – Friday</p>
-                  <p className="text-lg lg:text-xl font-heading text-gray-900">9:00 AM – 6:00 PM (GST)</p>
+                  <p className="text-base sm:text-lg lg:text-xl font-heading text-gray-900">Monday – Friday</p>
+                  <p className="text-base sm:text-lg lg:text-xl font-heading text-gray-900">9:00 AM – 6:00 PM (GST)</p>
                 </div>
               </div>
             </motion.div>

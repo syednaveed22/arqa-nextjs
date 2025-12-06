@@ -77,7 +77,7 @@ export default function FlagshipProjects() {
       <div className="sticky top-0 h-screen flex items-center overflow-hidden">
         <div className="w-full py-8 lg:py-12">
           <div className="container mx-auto px-6 lg:px-12 max-w-[1400px]">
-            <div className="grid lg:grid-cols-[1fr,1.2fr] gap-12 lg:gap-20 xl:gap-28 items-center">
+            <div className="grid lg:grid-cols-[1fr,1.2fr] gap-8 md:gap-12 lg:gap-20 xl:gap-28 items-center">
               {/* Left Column - Header + Project List */}
               <div className="lg:pr-4 flex flex-col justify-center overflow-hidden">
                 {/* Section Header */}
@@ -86,12 +86,12 @@ export default function FlagshipProjects() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.8, ease: [0.33, 0.02, 0, 0.93] }}
-                  className="mb-8 lg:mb-10"
+                  className="mb-6 sm:mb-8 lg:mb-10"
                 >
-                  <p className="text-[10px] lg:text-xs uppercase tracking-[0.25em] text-secondary/50 mb-3 lg:mb-4 font-medium">
+                  <p className="text-[10px] sm:text-xs uppercase tracking-[0.25em] text-secondary/50 mb-3 lg:mb-4 font-medium">
                     OUR PROJECTS
                   </p>
-                  <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-heading font-normal tracking-[-0.02em] leading-[1.15] text-dark">
+                  <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-heading font-normal tracking-[-0.02em] leading-[1.15] text-dark">
                     Crafting spaces that speak for themselves
                   </h2>
                 </motion.div>

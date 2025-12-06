@@ -27,21 +27,21 @@ const clients = [
 
 export default function Clients() {
   return (
-    <section className="py-16 bg-white border-y border-secondary/10">
+    <section className="py-12 sm:py-16 bg-white border-y border-secondary/10">
       <div className="container mx-auto px-6 lg:px-12 max-w-[1400px]">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-12"
+          className="text-center mb-8 md:mb-12"
         >
-          <h3 className="text-sm uppercase tracking-wider text-secondary/60 mb-8">
+          <h3 className="text-xs sm:text-sm uppercase tracking-wider text-secondary/60 mb-6 md:mb-8">
             Trusted by Leading Developers & Investors
           </h3>
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6 lg:gap-8 items-center">
           {clients.map((client, index) => (
             <motion.div
               key={client.name}
@@ -67,13 +67,13 @@ export default function Clients() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="mt-16 max-w-3xl mx-auto text-center"
+          className="mt-12 md:mt-16 max-w-3xl mx-auto text-center"
         >
-          <p className="text-xl text-secondary/80 italic mb-4">
+          <p className="text-base sm:text-lg md:text-xl text-secondary/80 italic mb-3 md:mb-4 px-4">
             "Outstanding professionalism and quality. They delivered our 15M AED
             villa project on time and exceeded our expectations in every aspect."
           </p>
-          <p className="text-secondary/60">
+          <p className="text-sm sm:text-base text-secondary/60">
             — Ahmed Al-Mansoori, Private Investor
           </p>
         </motion.div>

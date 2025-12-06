@@ -83,15 +83,15 @@ export default function AboutPage() {
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent"></div>
         </div>
-        <div className="container-custom relative z-10 w-full py-32 lg:py-40">
+        <div className="container-custom relative z-10 w-full py-20 sm:py-24 md:py-32 lg:py-40">
           {/* Top Section - About Studios */}
-          <div className="grid lg:grid-cols-2 gap-16 items-center mb-24 lg:mb-32">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center mb-16 md:mb-24 lg:mb-32">
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
             >
-              <h1 className="text-6xl lg:text-8xl font-heading font-bold mb-6 leading-[0.95] text-white">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-heading font-bold mb-4 md:mb-6 leading-[0.95] text-white">
                 About Arqa
               </h1>
             </motion.div>
@@ -100,24 +100,24 @@ export default function AboutPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
             >
-              <p className="text-lg lg:text-xl text-gray-300 leading-relaxed">
+              <p className="text-base sm:text-lg lg:text-xl text-gray-300 leading-relaxed">
                 Whether delivering luxury villas, commercial buildings, or tailored fit-outs, Arqa Design & Build focuses on creating spaces that perform beautifully, comply with Dubai's standards, and stand the test of time.
               </p>
             </motion.div>
           </div>
 
           {/* Vision, Mission, Core Value */}
-          <div className="grid md:grid-cols-3 gap-12 lg:gap-16 border-t border-white/5 pt-12 lg:pt-16">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-12 lg:gap-16 border-t border-white/5 pt-8 md:pt-12 lg:pt-16">
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
               className="group"
             >
-              <h3 className="text-2xl lg:text-3xl font-heading font-bold mb-4 text-white group-hover:text-gray-300 transition-colors duration-300">
+              <h3 className="text-xl sm:text-2xl lg:text-3xl font-heading font-bold mb-3 md:mb-4 text-white group-hover:text-gray-300 transition-colors duration-300">
                 Our Vision
               </h3>
-              <p className="text-gray-400 leading-relaxed">
+              <p className="text-sm sm:text-base text-gray-400 leading-relaxed">
                 To shape Dubai's next generation of villas and buildings into refined, resilient spaces that perform flawlessly and age beautifully.
               </p>
             </motion.div>
@@ -127,10 +127,10 @@ export default function AboutPage() {
               transition={{ duration: 0.8, delay: 0.65, ease: [0.22, 1, 0.36, 1] }}
               className="group"
             >
-              <h3 className="text-2xl lg:text-3xl font-heading font-bold mb-4 text-white group-hover:text-gray-300 transition-colors duration-300">
+              <h3 className="text-xl sm:text-2xl lg:text-3xl font-heading font-bold mb-3 md:mb-4 text-white group-hover:text-gray-300 transition-colors duration-300">
                 Our Mission
               </h3>
-              <p className="text-gray-400 leading-relaxed">
+              <p className="text-sm sm:text-base text-gray-400 leading-relaxed">
                 To turn complex construction into a guided, transparent journey by uniting design, engineering, and build under one accountable team.
               </p>
             </motion.div>
@@ -138,12 +138,12 @@ export default function AboutPage() {
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8, ease: [0.22, 1, 0.36, 1] }}
-              className="group"
+              className="group sm:col-span-2 md:col-span-1"
             >
-              <h3 className="text-2xl lg:text-3xl font-heading font-bold mb-4 text-white group-hover:text-gray-300 transition-colors duration-300">
+              <h3 className="text-xl sm:text-2xl lg:text-3xl font-heading font-bold mb-3 md:mb-4 text-white group-hover:text-gray-300 transition-colors duration-300">
                 Our Core Values
               </h3>
-              <p className="text-gray-400 leading-relaxed">
+              <p className="text-sm sm:text-base text-gray-400 leading-relaxed">
                 Clarity, craft, compliance, collaboration—building to Dubai's codes, speaking honestly, and treating every project as a true partnership.
               </p>
             </motion.div>
@@ -152,15 +152,15 @@ export default function AboutPage() {
       </section>
 
       {/* Crafting Timeless Architecture */}
-      <section className="py-24 lg:py-32 bg-[#f5f5f0]">
+      <section className="py-16 sm:py-20 md:py-24 lg:py-32 bg-[#f5f5f0]">
         <div className="container-custom">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-stretch">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-stretch">
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-              className="relative h-full min-h-[600px] bg-gray-200 rounded-2xl overflow-hidden group"
+              className="relative h-full min-h-[300px] sm:min-h-[400px] md:min-h-[500px] lg:min-h-[600px] bg-gray-200 rounded-2xl overflow-hidden group"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-gray-300 to-gray-400 transition-transform duration-700 group-hover:scale-105"></div>
             </motion.div>
@@ -173,16 +173,16 @@ export default function AboutPage() {
               <p className="text-sm uppercase tracking-widest text-gray-500 mb-4 font-medium">
                 INSIDE ARQA
               </p>
-              <h2 className="text-4xl lg:text-5xl font-heading font-bold mb-6 text-gray-900 leading-tight">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold mb-4 md:mb-6 text-gray-900 leading-tight">
                 Crafting Refined Spaces in Dubai
               </h2>
-              <p className="text-gray-600 mb-6 leading-relaxed text-lg">
+              <p className="text-gray-600 mb-4 md:mb-6 leading-relaxed text-base sm:text-lg">
                 Arqa Design & Build was founded to bring architecture, engineering, and construction together into one clear, accountable process. From luxury villas to bespoke commercial projects, we create spaces that balance aesthetics, functionality, cost, and full compliance with Dubai's regulations.
               </p>
-              <p className="text-gray-600 mb-8 leading-relaxed text-lg">
+              <p className="text-gray-600 mb-6 md:mb-8 leading-relaxed text-base sm:text-lg">
                 Our experience spans private homes, investment properties, and tailored fit-outs, with every project shaped around its context, purpose, and long-term value for owners and investors.
               </p>
-              <h3 className="text-2xl lg:text-3xl font-heading font-bold mb-6 text-gray-900">
+              <h3 className="text-xl sm:text-2xl lg:text-3xl font-heading font-bold mb-4 md:mb-6 text-gray-900">
                 Beyond Construction – A Vision for the Future
               </h3>
               <ul className="space-y-4 mb-8">
@@ -204,7 +204,7 @@ export default function AboutPage() {
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span className="text-gray-700 text-lg">
+                  <span className="text-gray-700 text-base sm:text-lg">
                     Dubai-Rooted – Deep understanding of local market, communities, and codes.
                   </span>
                 </motion.li>
@@ -226,7 +226,7 @@ export default function AboutPage() {
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span className="text-gray-700 text-lg">
+                  <span className="text-gray-700 text-base sm:text-lg">
                     Integrated Design–Build – One team guiding projects from first sketch to handover.
                   </span>
                 </motion.li>
@@ -248,7 +248,7 @@ export default function AboutPage() {
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span className="text-gray-700 text-lg">
+                  <span className="text-gray-700 text-base sm:text-lg">
                     Quality & Sustainability – Durable, efficient spaces designed to perform over time.
                   </span>
                 </motion.li>
@@ -270,9 +270,9 @@ export default function AboutPage() {
       </section>
 
       {/* Approach Section */}
-      <section className="py-24 lg:py-32 bg-white">
+      <section className="py-16 sm:py-20 md:py-24 lg:py-32 bg-white">
         <div className="container-custom">
-          <div className="grid lg:grid-cols-[1fr,1.2fr] gap-12 lg:gap-20 items-center max-w-[1600px] mx-auto">
+          <div className="grid lg:grid-cols-[1fr,1.2fr] gap-8 md:gap-12 lg:gap-20 items-center max-w-[1600px] mx-auto">
             {/* Left Column - Content */}
             <motion.div
               initial={{ opacity: 0, y: 40 }}
@@ -284,7 +284,7 @@ export default function AboutPage() {
               <p className="text-[11px] uppercase tracking-[0.25em] text-gray-400 mb-6 font-medium">
                 APPROACH
               </p>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-normal mb-12 text-gray-900 leading-[1.15]">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-normal mb-8 md:mb-12 text-gray-900 leading-[1.15]">
                 Designing with Purpose, Innovation, and Sustainability
               </h2>
 
@@ -351,7 +351,7 @@ export default function AboutPage() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-              className="relative h-[400px] lg:h-[600px] overflow-hidden order-1 lg:order-2"
+              className="relative h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden order-1 lg:order-2"
             >
               <AnimatePresence mode="wait">
                 <motion.div
@@ -387,24 +387,24 @@ export default function AboutPage() {
       </section>
 
       {/* Team Section */}
-      <section className="py-24 lg:py-32 bg-[#1a1d23] text-white">
+      <section className="py-16 sm:py-20 md:py-24 lg:py-32 bg-[#1a1d23] text-white">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            className="mb-16"
+            className="mb-12 md:mb-16"
           >
-            <p className="text-sm uppercase tracking-widest text-gray-500 mb-4 font-medium">
+            <p className="text-xs sm:text-sm uppercase tracking-widest text-gray-500 mb-3 md:mb-4 font-medium">
               MEMBER
             </p>
-            <h2 className="text-4xl lg:text-5xl font-heading font-bold text-white">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-white">
               Meet Our Team
             </h2>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10">
             {team.map((member, index) => (
               <motion.div
                 key={member.name}
@@ -423,7 +423,7 @@ export default function AboutPage() {
                 {/* Polaroid Card */}
                 <div className="shadow-2xl group-hover:shadow-3xl transition-all duration-700 ease-out relative overflow-hidden">
                   {/* Photo Area */}
-                  <div className="relative h-[450px] bg-gray-200 overflow-hidden">
+                  <div className="relative h-[350px] sm:h-[400px] md:h-[450px] bg-gray-200 overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-br from-gray-300 to-gray-400 transform transition-transform duration-700 ease-out group-hover:scale-110 will-change-transform"></div>
 
                     {/* Info Overlay - Always visible at bottom */}
@@ -476,24 +476,24 @@ export default function AboutPage() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-24 lg:py-32 bg-white">
+      <section className="py-16 sm:py-20 md:py-24 lg:py-32 bg-white">
         <div className="container-custom">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            className="mb-16"
+            className="mb-12 md:mb-16"
           >
-            <p className="text-[11px] uppercase tracking-[0.25em] text-gray-400 mb-6 font-medium">
+            <p className="text-[11px] uppercase tracking-[0.25em] text-gray-400 mb-4 md:mb-6 font-medium">
               OUR COMMITMENT
             </p>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-normal mb-4 text-gray-900 leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-normal mb-4 text-gray-900 leading-tight">
               Why Choose Arqa
             </h2>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 lg:gap-10">
             {/* 120+ Approvals Secured */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -503,7 +503,7 @@ export default function AboutPage() {
               className="group"
             >
               <div className="mb-6">
-                <div className="text-5xl lg:text-6xl font-heading font-bold text-gray-900 mb-2">120+</div>
+                <div className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-gray-900 mb-2">120+</div>
                 <p className="text-xs uppercase tracking-[0.2em] text-gray-400 font-medium">
                   APPROVALS SECURED
                 </p>
@@ -522,7 +522,7 @@ export default function AboutPage() {
               className="group"
             >
               <div className="mb-6">
-                <div className="text-5xl lg:text-6xl font-heading font-bold text-gray-900 mb-2">92%</div>
+                <div className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-gray-900 mb-2">92%</div>
                 <p className="text-xs uppercase tracking-[0.2em] text-gray-400 font-medium">
                   ON-TIME DELIVERY
                 </p>
@@ -541,7 +541,7 @@ export default function AboutPage() {
               className="group"
             >
               <div className="mb-6">
-                <div className="text-5xl lg:text-6xl font-heading font-bold text-gray-900 mb-2">88%</div>
+                <div className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-gray-900 mb-2">88%</div>
                 <p className="text-xs uppercase tracking-[0.2em] text-gray-400 font-medium">
                   BUDGET RELIABILITY
                 </p>
@@ -560,7 +560,7 @@ export default function AboutPage() {
               className="group"
             >
               <div className="mb-6">
-                <div className="text-5xl lg:text-6xl font-heading font-bold text-gray-900 mb-2">68%</div>
+                <div className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-gray-900 mb-2">68%</div>
                 <p className="text-xs uppercase tracking-[0.2em] text-gray-400 font-medium">
                   REPEAT & REFERRAL CLIENTS
                 </p>

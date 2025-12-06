@@ -39,7 +39,7 @@ export default function ServicesBusiness() {
     <section id="services" className="section-padding bg-white">
       <div className="container mx-auto px-6 lg:px-12 max-w-[1400px]">
         {/* Section Header */}
-        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-12 lg:mb-16">
+        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-10 md:mb-12 lg:mb-16">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -47,10 +47,10 @@ export default function ServicesBusiness() {
             transition={{ duration: 0.8, ease: [0.33, 0.02, 0, 0.93] }}
             className="mb-6 lg:mb-0"
           >
-            <p className="text-xs uppercase tracking-[0.2em] text-secondary/60 mb-4">
+            <p className="text-xs uppercase tracking-[0.2em] text-secondary/60 mb-3 md:mb-4">
               SERVICES
             </p>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-normal tracking-tight leading-[1.15] max-w-2xl">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-normal tracking-tight leading-[1.15] max-w-2xl">
               Design solutions tailored to your lifestyle
             </h2>
           </motion.div>
@@ -84,7 +84,7 @@ export default function ServicesBusiness() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6 lg:gap-8">
           {services.map((service, index) => (
             <motion.div
               key={service.title}

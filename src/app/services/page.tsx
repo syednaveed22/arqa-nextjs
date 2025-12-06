@@ -86,14 +86,14 @@ export default function ServicesPage() {
   return (
     <main className="min-h-screen bg-white relative">
       {/* Hero Section */}
-      <section className="pt-32 pb-20 lg:pt-40 lg:pb-28 bg-gray-50">
+      <section className="pt-24 sm:pt-28 md:pt-32 pb-16 sm:pb-20 lg:pt-40 lg:pb-28 bg-gray-50">
         <div className="container-custom">
           <div className="max-w-4xl">
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="text-[11px] uppercase tracking-[0.25em] text-gray-400 mb-6 font-medium"
+              className="text-[11px] uppercase tracking-[0.25em] text-gray-400 mb-4 md:mb-6 font-medium"
             >
               OUR SERVICES
             </motion.p>
@@ -101,7 +101,7 @@ export default function ServicesPage() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-heading font-normal tracking-tight leading-[1.1] text-gray-900 mb-8"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-heading font-normal tracking-tight leading-[1.1] text-gray-900 mb-6 md:mb-8"
             >
               Comprehensive design & construction solutions
             </motion.h1>
@@ -109,7 +109,7 @@ export default function ServicesPage() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-[15px] lg:text-base leading-relaxed text-gray-600 max-w-2xl"
+              className="text-sm sm:text-[15px] lg:text-base leading-relaxed text-gray-600 max-w-2xl"
             >
               From initial concept to final handover, we provide integrated services that bring exceptional properties to life across Dubai and the UAE.
             </motion.p>
@@ -118,9 +118,9 @@ export default function ServicesPage() {
       </section>
 
       {/* Services Grid */}
-      <section className="py-20 lg:py-32">
+      <section className="py-16 sm:py-20 lg:py-32">
         <div className="container-custom">
-          <div className="space-y-24 lg:space-y-32 max-w-[1600px] mx-auto">
+          <div className="space-y-16 sm:space-y-20 md:space-y-24 lg:space-y-32 max-w-[1600px] mx-auto">
             {services.map((service, index) => (
               <motion.div
                 key={service.number}
@@ -128,26 +128,26 @@ export default function ServicesPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.8, delay: index * 0.1, ease: [0.22, 1, 0.36, 1] }}
-                className="grid lg:grid-cols-2 gap-12 lg:gap-16 xl:gap-20 items-center"
+                className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 xl:gap-20 items-center"
               >
                 {/* Text Content */}
                 <div className={`${index % 2 === 1 ? 'lg:order-2' : ''}`}>
-                  <div className="flex items-baseline gap-6 mb-6">
-                    <span className="text-6xl lg:text-7xl xl:text-8xl font-heading font-light text-gray-200 leading-none">
+                  <div className="flex items-baseline gap-4 md:gap-6 mb-4 md:mb-6">
+                    <span className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-heading font-light text-gray-200 leading-none">
                       {service.number}
                     </span>
                     <div className="flex-1">
-                      <h2 className="text-3xl lg:text-4xl xl:text-5xl font-heading font-normal tracking-tight text-gray-900 leading-[1.15]">
+                      <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-heading font-normal tracking-tight text-gray-900 leading-[1.15]">
                         {service.title}
                       </h2>
                     </div>
                   </div>
 
-                  <p className="text-[15px] lg:text-base leading-relaxed text-gray-600 mb-6">
+                  <p className="text-sm sm:text-[15px] lg:text-base leading-relaxed text-gray-600 mb-4 md:mb-6">
                     {service.shortDesc}
                   </p>
 
-                  <p className="text-[15px] leading-relaxed text-gray-500 mb-8">
+                  <p className="text-sm sm:text-[15px] leading-relaxed text-gray-500 mb-6 md:mb-8">
                     {service.description}
                   </p>
 
@@ -196,7 +196,7 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 lg:py-28 bg-gray-900 text-white overflow-hidden relative">
+      <section className="py-16 sm:py-20 lg:py-28 bg-gray-900 text-white overflow-hidden relative">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-5">
           <div
@@ -220,25 +220,25 @@ export default function ServicesPage() {
                 <p className="text-[11px] uppercase tracking-[0.25em] text-white/60 mb-6 font-medium">
                   START YOUR PROJECT
                 </p>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-heading font-normal tracking-tight leading-[1.1] text-white mb-6">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-heading font-normal tracking-tight leading-[1.1] text-white mb-4 md:mb-6">
                   Ready to build with Arqa?
                 </h2>
-                <p className="text-[15px] lg:text-base leading-relaxed text-white/70 mb-8 max-w-xl">
+                <p className="text-sm sm:text-[15px] lg:text-base leading-relaxed text-white/70 mb-6 md:mb-8 max-w-xl">
                   Whether you're planning a custom villa, a signature commercial space, or a major renovation, Arqa Design & Build guides you from first sketch to handover with one accountable team.
                 </p>
 
                 {/* Stats */}
-                <div className="grid grid-cols-3 gap-6 mb-10 pb-10 border-b border-white/10">
+                <div className="grid grid-cols-3 gap-4 md:gap-6 mb-8 md:mb-10 pb-8 md:pb-10 border-b border-white/10">
                   <div>
-                    <div className="text-3xl lg:text-4xl font-heading font-bold text-white mb-1">80+</div>
+                    <div className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-white mb-1">80+</div>
                     <div className="text-xs text-white/60 uppercase tracking-wider">Projects Delivered</div>
                   </div>
                   <div>
-                    <div className="text-3xl lg:text-4xl font-heading font-bold text-white mb-1">8+</div>
+                    <div className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-white mb-1">8+</div>
                     <div className="text-xs text-white/60 uppercase tracking-wider">Years in Dubai</div>
                   </div>
                   <div>
-                    <div className="text-3xl lg:text-4xl font-heading font-bold text-white mb-1">92%</div>
+                    <div className="text-2xl sm:text-3xl lg:text-4xl font-heading font-bold text-white mb-1">92%</div>
                     <div className="text-xs text-white/60 uppercase tracking-wider">Client Satisfaction</div>
                   </div>
                 </div>
@@ -263,7 +263,7 @@ export default function ServicesPage() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-                className="grid grid-cols-2 gap-4"
+                className="grid grid-cols-2 gap-3 md:gap-4"
               >
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
