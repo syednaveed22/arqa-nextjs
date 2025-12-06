@@ -71,13 +71,112 @@ export default function FlagshipProjects() {
     <section
       id="portfolio"
       ref={sectionRef}
-      className="bg-[#E8E3DC] relative"
-      style={{ minHeight: "400vh" }}
+      className="bg-[#E8E3DC] relative lg:min-h-[400vh]"
     >
-      <div className="sticky top-0 h-screen flex items-center overflow-hidden">
+      {/* Mobile Layout - Simple vertical list with images below each project */}
+      <div className="lg:hidden py-12 sm:py-16">
+        <div className="container mx-auto px-6 sm:px-12 max-w-[1400px]">
+          {/* Section Header */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, ease: [0.33, 0.02, 0, 0.93] }}
+            className="mb-10"
+          >
+            <p className="text-[10px] sm:text-xs uppercase tracking-[0.25em] text-secondary/50 mb-3 sm:mb-4 font-medium">
+              OUR PROJECTS
+            </p>
+            <h2 className="text-2xl sm:text-3xl font-heading font-normal tracking-[-0.02em] leading-[1.15] text-dark">
+              Crafting spaces that speak for themselves
+            </h2>
+          </motion.div>
+
+          {/* Mobile Project List with Images */}
+          <div className="space-y-8">
+            {projects.map((project, index) => (
+              <motion.div
+                key={project.number}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{
+                  duration: 0.6,
+                  delay: index * 0.1,
+                  ease: [0.33, 0.02, 0, 0.93],
+                }}
+                className="space-y-4"
+              >
+                {/* Project Name */}
+                <div className="flex items-center gap-3 py-3 border-b border-secondary/10">
+                  <div className="text-xs font-heading tracking-tight text-dark font-normal min-w-[20px]">
+                    {project.number}
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-sm sm:text-base font-heading tracking-tight text-dark font-normal leading-tight">
+                      {project.title}
+                    </h3>
+                  </div>
+                </div>
+
+                {/* Project Image - Below the name */}
+                <div className="relative h-[250px] sm:h-[300px] md:h-[350px] overflow-hidden bg-white/20 backdrop-blur-sm rounded-lg">
+                  {/* Placeholder - Replace with actual images */}
+                  <div className="absolute inset-0 flex flex-col items-center justify-center text-secondary/20 bg-gradient-to-br from-secondary/5 to-secondary/10">
+                    <div className="text-4xl sm:text-5xl md:text-6xl font-heading mb-2 tracking-tight font-light">
+                      [{project.number}]
+                    </div>
+                    <div className="text-xs sm:text-sm tracking-[0.2em] uppercase font-light px-4 text-center">
+                      {project.title}
+                    </div>
+                  </div>
+                  {/* Uncomment when you have real images */}
+                  {/* <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover"
+                  /> */}
+                </div>
+              </motion.div>
+            ))}
+
+            {/* View Full Portfolio Link */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="pt-6"
+            >
+              <a
+                href="/projects"
+                className="inline-flex items-center gap-3 text-[11px] sm:text-xs font-heading tracking-[0.15em] text-dark hover:gap-4 transition-all duration-500 uppercase font-medium"
+              >
+                VIEW FULL PORTFOLIO
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={1.5}
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </a>
+            </motion.div>
+          </div>
+        </div>
+      </div>
+
+      {/* Desktop Layout - Sticky scroll with side-by-side layout */}
+      <div className="hidden lg:block sticky top-0 h-screen flex items-center overflow-hidden">
         <div className="w-full py-8 lg:py-12">
           <div className="container mx-auto px-6 lg:px-12 max-w-[1400px]">
-            <div className="grid lg:grid-cols-[1fr,1.2fr] gap-8 md:gap-12 lg:gap-20 xl:gap-28 items-center">
+            <div className="grid lg:grid-cols-[1fr,1.2fr] gap-12 lg:gap-20 xl:gap-28 items-center">
               {/* Left Column - Header + Project List */}
               <div className="lg:pr-4 flex flex-col justify-center overflow-hidden">
                 {/* Section Header */}
@@ -86,12 +185,12 @@ export default function FlagshipProjects() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.8, ease: [0.33, 0.02, 0, 0.93] }}
-                  className="mb-6 sm:mb-8 lg:mb-10"
+                  className="mb-8 lg:mb-10"
                 >
-                  <p className="text-[10px] sm:text-xs uppercase tracking-[0.25em] text-secondary/50 mb-3 lg:mb-4 font-medium">
+                  <p className="text-[10px] lg:text-xs uppercase tracking-[0.25em] text-secondary/50 mb-3 lg:mb-4 font-medium">
                     OUR PROJECTS
                   </p>
-                  <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-heading font-normal tracking-[-0.02em] leading-[1.15] text-dark">
+                  <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-heading font-normal tracking-[-0.02em] leading-[1.15] text-dark">
                     Crafting spaces that speak for themselves
                   </h2>
                 </motion.div>
@@ -204,7 +303,7 @@ export default function FlagshipProjects() {
               </div>
 
               {/* Right Column - Scrolling Images */}
-              <div className="relative h-[50vh] lg:h-[65vh] xl:h-[70vh] hidden lg:block">
+              <div className="relative h-[50vh] lg:h-[65vh] xl:h-[70vh]">
                 {projects.map((project, index) => (
                   <motion.div
                     key={project.number}
