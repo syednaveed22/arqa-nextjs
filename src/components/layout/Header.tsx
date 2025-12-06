@@ -226,17 +226,17 @@ export default function Header() {
           >
             <span className="sr-only">Open menu</span>
             <span
-              className={`block absolute h-0.5 w-6 transition-all duration-300 ease-out ${menuButtonColor} ${
+              className={`block absolute h-0.5 w-6 transition-all duration-300 ease-out bg-[#121212] ${
                 isMobileMenuOpen
                   ? "rotate-45 translate-y-0"
                   : "-translate-y-2"
               }`}
             />
             <span
-              className={`block absolute h-0.5 w-6 transition-all duration-300 ease-out ${menuButtonColor} ${isMobileMenuOpen ? "opacity-0" : "opacity-100"}`}
+              className={`block absolute h-0.5 w-6 transition-all duration-300 ease-out bg-[#121212] ${isMobileMenuOpen ? "opacity-0" : "opacity-100"}`}
             />
             <span
-              className={`block absolute h-0.5 w-6 transition-all duration-300 ease-out ${menuButtonColor} ${
+              className={`block absolute h-0.5 w-6 transition-all duration-300 ease-out bg-[#121212] ${
                 isMobileMenuOpen
                   ? "-rotate-45 translate-y-0"
                   : "translate-y-2"
@@ -253,7 +253,7 @@ export default function Header() {
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.45, ease: [0.33, 0.02, 0, 0.93] }}
-              className="lg:hidden overflow-hidden"
+              className="lg:hidden overflow-hidden bg-white rounded-lg mt-4 shadow-lg"
             >
               <div className="pt-6 pb-4 space-y-1">
                 {navigation.map((item, index) => (
@@ -266,11 +266,7 @@ export default function Header() {
                     <Link
                       href={item.href}
                       onClick={(e) => handleNavClick(e, item.href)}
-                      className={`block py-3 px-4 text-base font-medium tracking-wide uppercase transition-colors duration-300 ${
-                        isLightBackground
-                          ? "text-[#121212]/80 hover:text-[#121212] hover:bg-gray-100/50"
-                          : "text-white/90 hover:text-white hover:bg-white/5"
-                      }`}
+                      className="block py-3 px-4 text-base font-medium tracking-wide uppercase transition-colors duration-300 text-[#121212]/80 hover:text-[#121212] hover:bg-gray-100/50"
                     >
                       {item.name}
                     </Link>
