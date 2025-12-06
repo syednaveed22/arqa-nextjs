@@ -136,17 +136,20 @@ export default function Header() {
 
   // Determine navbar background
   const getNavbarBackground = () => {
+    // On mobile, always use solid white background (no transparency)
+    const mobileBg = "lg:bg-transparent bg-white";
+    
     if (isScrolled) {
-      return "bg-white/95 backdrop-blur-md shadow-sm py-3";
+      return `bg-white/95 backdrop-blur-md shadow-sm py-3 ${mobileBg}`;
     }
     
     if (isDarkHeroPage) {
-      // Transparent background for dark hero pages
-      return "bg-transparent py-6";
+      // Transparent background for dark hero pages on desktop, solid white on mobile
+      return `lg:bg-transparent bg-white py-6`;
     }
     
     // Default: light background for other pages
-    return "bg-white/95 backdrop-blur-md py-6";
+    return `bg-white/95 backdrop-blur-md py-6 ${mobileBg}`;
   };
 
   return (
@@ -155,7 +158,7 @@ export default function Header() {
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: [0.33, 0.02, 0, 0.93] }}
       style={{
-        backgroundColor: !isScrolled && isDarkHeroPage ? "transparent" : undefined,
+        backgroundColor: !isScrolled && isDarkHeroPage ? undefined : undefined,
       }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-out ${getNavbarBackground()}`}
     >
