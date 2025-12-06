@@ -136,20 +136,19 @@ export default function Header() {
 
   // Determine navbar background
   const getNavbarBackground = () => {
-    // On mobile, always use solid white background (no transparency)
-    const mobileBg = "lg:bg-transparent bg-white";
-    
+    // On mobile (below lg breakpoint), always use solid white background
+    // On desktop (lg and above), use conditional backgrounds
     if (isScrolled) {
-      return `bg-white/95 backdrop-blur-md shadow-sm py-3 ${mobileBg}`;
+      return "bg-white/95 backdrop-blur-md shadow-sm py-3";
     }
     
     if (isDarkHeroPage) {
-      // Transparent background for dark hero pages on desktop, solid white on mobile
-      return `lg:bg-transparent bg-white py-6`;
+      // Transparent on desktop, white on mobile
+      return "lg:bg-transparent bg-white py-6";
     }
     
     // Default: light background for other pages
-    return `bg-white/95 backdrop-blur-md py-6 ${mobileBg}`;
+    return "bg-white/95 backdrop-blur-md py-6";
   };
 
   return (
