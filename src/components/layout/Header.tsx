@@ -136,15 +136,13 @@ export default function Header() {
 
   // Determine navbar background
   const getNavbarBackground = () => {
-    // On mobile (below lg breakpoint), always use solid white background
-    // On desktop (lg and above), use conditional backgrounds
     if (isScrolled) {
       return "bg-white/95 backdrop-blur-md shadow-sm py-3";
     }
     
     if (isDarkHeroPage) {
-      // Transparent on desktop, white on mobile
-      return "lg:bg-transparent bg-white py-6";
+      // Transparent background for dark hero pages
+      return "bg-transparent py-6";
     }
     
     // Default: light background for other pages
@@ -157,7 +155,7 @@ export default function Header() {
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: [0.33, 0.02, 0, 0.93] }}
       style={{
-        backgroundColor: !isScrolled && isDarkHeroPage ? undefined : undefined,
+        backgroundColor: !isScrolled && isDarkHeroPage ? "transparent" : undefined,
       }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-out ${getNavbarBackground()}`}
     >
@@ -222,23 +220,30 @@ export default function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden flex flex-col justify-center items-center w-10 h-10 relative"
+            className="lg:hidden flex flex-col justify-center items-center w-10 h-10 relative z-10"
             aria-label="Toggle menu"
             aria-expanded={isMobileMenuOpen}
           >
             <span className="sr-only">Open menu</span>
+            {/* Hamburger lines - dark when menu is open (white bg), otherwise use menuButtonColor */}
             <span
-              className={`block absolute h-0.5 w-6 transition-all duration-300 ease-out bg-[#121212] ${
+              className={`block absolute h-0.5 w-6 transition-all duration-300 ease-out ${
+                isMobileMenuOpen ? "bg-[#121212]" : menuButtonColor
+              } ${
                 isMobileMenuOpen
                   ? "rotate-45 translate-y-0"
                   : "-translate-y-2"
               }`}
             />
             <span
-              className={`block absolute h-0.5 w-6 transition-all duration-300 ease-out bg-[#121212] ${isMobileMenuOpen ? "opacity-0" : "opacity-100"}`}
+              className={`block absolute h-0.5 w-6 transition-all duration-300 ease-out ${
+                isMobileMenuOpen ? "bg-[#121212]" : menuButtonColor
+              } ${isMobileMenuOpen ? "opacity-0" : "opacity-100"}`}
             />
             <span
-              className={`block absolute h-0.5 w-6 transition-all duration-300 ease-out bg-[#121212] ${
+              className={`block absolute h-0.5 w-6 transition-all duration-300 ease-out ${
+                isMobileMenuOpen ? "bg-[#121212]" : menuButtonColor
+              } ${
                 isMobileMenuOpen
                   ? "-rotate-45 translate-y-0"
                   : "translate-y-2"
@@ -247,7 +252,7 @@ export default function Header() {
           </button>
         </div>
 
-        {/* Mobile Navigation */}
+        {/* Mobile Navigation - Always white background on mobile */}
         <AnimatePresence>
           {isMobileMenuOpen && (
             <motion.nav
